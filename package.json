@@ -1,0 +1,34 @@
+{
+  "name": "net.vorotnikov.republish",
+  "version": "1.0.0",
+  "description": "Open IoT republish plugin.",
+  "main": "index.js",
+  "scripts": {
+    "prepack": "npm test",
+    "postpack": "./utils/convert.sh net.vorotnikov.republish-1.0.0.tgz",
+    "test": "mocha *.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pvorotnikov/open-iot-republish.git"
+  },
+  "author": "Petar Vorotnikov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pvorotnikov/open-iot-republish/issues"
+  },
+  "homepage": "https://github.com/pvorotnikov/open-iot-republish#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "bundleDependencies": [
+    "lodash"
+  ],
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "mock-require": "^3.0.3",
+    "sinon": "^7.3.2",
+    "sinon-chai": "^3.3.0"
+  }
+}
